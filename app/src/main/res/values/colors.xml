@@ -10,5 +10,6 @@
     <color name="main1">#1C6758</color>
     <color name="main2">#3D8361</color>
     <color name="main3">#D6CDA4</color>
-    <color name="background">#EEF2E6</color>
+    <color name="background">#ECF2E6</color>
+    <color name="skin">#594545</color>
 </resources>

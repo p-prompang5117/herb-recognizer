@@ -5,20 +5,21 @@
         android:id="@+id/home"
         android:icon="@drawable/ic_baseline_home_24"
         android:title="Home"
-        app:cnb_iconColor="@color/main1"/>
+       
+        app:cnb_iconColor="@color/skin"/>
     <item
         android:id="@+id/camera"
         android:icon="@drawable/ic_baseline_camera_alt_24"
-        android:title="Activity"
-        app:cnb_iconColor="@color/main1"/>
+        android:title="Camera"
+        app:cnb_iconColor="@color/skin" />
     <item
         android:id="@+id/archive"
         android:icon="@drawable/ic_baseline_archive_24"
-        android:title="Favorites"
-        app:cnb_iconColor="@color/main1" />
+        android:title="Archive"
+        app:cnb_iconColor="@color/skin" />
     <item
         android:id="@+id/settings"
         android:icon="@drawable/ic_baseline_settings_24"
         android:title="Settings"
-        app:cnb_iconColor="@color/main1" />
+        app:cnb_iconColor="@color/skin" />
 </menu>
