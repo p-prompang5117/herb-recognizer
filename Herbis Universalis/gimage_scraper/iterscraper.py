@@ -1,6 +1,4 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-import requests
+from django.contrib.sites import requests
 import io
 from PIL import Image
 import time

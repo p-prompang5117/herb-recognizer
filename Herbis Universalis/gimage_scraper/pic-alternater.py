@@ -8,7 +8,6 @@ for i in parentlist :
     imglist = os.listdir('scraped_images/'+i)
     print(i)
     for j in imglist:
-        #print(j)
         try:
             imageObject = Image.open("scraped_images/"+i+"/"+j)
 

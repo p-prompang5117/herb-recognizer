@@ -6,23 +6,13 @@ from PIL import Image
 import time
 import bs4
 
-# This program aint need to install chrome-driver (or anything similar)
-'''
-# selenium 3
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
-driver = webdriver.Chrome(ChromeDriverManager().install())
-from selenium.webdriver.common.by import By
-'''
 
 # selenium 4
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.common.by import By
 
-wd = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-
+driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
 def get_images_from_google(wd, delay, max_images):
     def scroll_down(wd):
