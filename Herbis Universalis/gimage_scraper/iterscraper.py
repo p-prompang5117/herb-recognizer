@@ -93,41 +93,12 @@ def download_image(download_path, url, file_name):
 
 
 
-keylist = [
-#"ขมิ้น",
-#"ขี้เหล็ก",
-#"มะขาม",
-#"แครอท",
-#"ชะอม",
-#"ตาล",
-#"ตะไคร้",
-#"แตงโม",
-#"ตำลึง",
-#"แตงกวา",
-#"แตงไทย",
-#"ถั่วลันเตา",
-#"ถั่วเหลือง",
-#"ลูกท้อ",
-#"ทับทิม",
-#"น้ำเต้า",
-#"บัวบก",
-#"บ๊วย",
-#"บวบ",
-#"ผักชีฝรั่ง",
-#"ผักโขม",
-#"เผือก",
-#"ฝรั่ง",
-"พญาสัตบรรณ",
-"พริกขี้หนู",
-"พริกไทย",
-"พุทธรักษา",
-"ฟักทอง"
-]
+keylist = ['Turmeric','Black galingale','Cinnamomum','Sesamum indicum','Camellia sinensis',
+           'Stevia','Cabbage','Banana','Ginger','Siamese senna','Bottle gourd']
 
-parts_list = ["root","leaf","fruit","tree"]
-parts_listth = ["ลำต้น"]
-#parts_listth = ["ราก","ใบ","ผล","ลำต้น"]
-keyword = [str(i)+" "+str(j) for i in keylist for j in parts_listth]
+parts_list = ["root","leaf","fruit","tree","Flower"]
+
+keyword = [str(i)+" "+str(j) for i in keylist for j in parts_list]
 print(keyword)
 
 
@@ -136,7 +107,7 @@ for k in keyword :
     print('______________________________________')
     print("Working on: "+str(k))
     click_delay = 3.5
-    max_img = 100
+    max_img = 20
 
     urls = get_images_from_google(wd, click_delay, max_img, k) # webdriver,delay(sec),max_img
     path = "scraped_images/"+k+"/"
