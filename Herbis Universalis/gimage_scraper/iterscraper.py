@@ -96,7 +96,7 @@ def download_image(download_path, url, file_name):
 keylist = ['Turmeric','Black galingale','Cinnamomum','Sesamum indicum','Camellia sinensis',
            'Stevia','Cabbage','Banana','Ginger','Siamese senna','Bottle gourd']
 
-parts_list = ["root","leaf","fruit","tree","Flower"]
+parts_list = ["root Real","leaf Real","fruit Real","tree Real","Flower Real"]
 
 keyword = [str(i)+" "+str(j) for i in keylist for j in parts_list]
 print(keyword)
